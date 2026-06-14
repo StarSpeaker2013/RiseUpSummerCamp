@@ -18,7 +18,7 @@
         <span class="brand-mark">☀️</span>
         <span class="brand-text">RiseUp <em>Summer Camp</em></span>
       </a>
-      <nav class="nav-links">
+      <nav class="nav-links" id="navLinks">
         <a href="#overview">Overview</a>
         <a href="#schedule">Schedule</a>
         <a href="#activities">Activities</a>
@@ -26,6 +26,9 @@
         <a href="#gallery">Gallery</a>
         <a href="#register" class="btn btn-primary btn-sm">Register</a>
       </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
@@ -45,19 +48,19 @@
           <span class="hero-sub">Summer Camp</span>
         </h1>
         <p class="lead">
-          A <strong>FREE</strong> 5-day immersive program for kids ages 6–12 — building
+          A 5-day immersive program for kids ages 6–12 — building
           teamwork, confidence, and leadership through outdoor exploration,
           creative problem-solving, magic, and no-fire cooking.
         </p>
         <div class="hero-cta">
-          <a href="#register" class="btn btn-primary">Sign Up Free →</a>
+          <a href="#register" class="btn btn-primary">Sign Up →</a>
           <a href="#overview" class="btn btn-ghost">Learn More</a>
         </div>
         <ul class="hero-facts">
           <li><strong>July 13 – 17, 2026</strong><span>Mon – Fri</span></li>
           <li><strong>9:30 AM – 12:30 PM</strong><span>Daily</span></li>
           <li><strong>Ages 6 – 12</strong><span>All welcome</span></li>
-          <li><strong>$0</strong><span>Totally Free</span></li>
+          <li><strong>💝</strong><span>Accept Donations</span></li>
         </ul>
       </div>
       <div class="hero-visual">
@@ -90,9 +93,9 @@
           <p>July 13 – July 17, 2026<br /><span class="muted">Mon – Fri · 9:30 AM – 12:30 PM</span></p>
         </div>
         <div class="info-card pop-2">
-          <div class="info-icon">💸</div>
+          <div class="info-icon">💝</div>
           <h3>Program Fees</h3>
-          <p><strong class="big">FREE</strong><br /><span class="muted">No cost to participate</span></p>
+          <p><strong class="big">Donations</strong><br /><span class="muted">Accept Donations</span></p>
         </div>
         <div class="info-card pop-3">
           <div class="info-icon">📍</div>
@@ -109,7 +112,7 @@
       <div class="format-band">
         <div>
           <span class="kicker">Format</span>
-          <h3>Staff · Camp Leaders · Buddies</h3>
+          <h3>Staff · Planning Committee · Camp Leaders · Volunteer Buddies and Campers</h3>
         </div>
         <div class="focus-pills">
           <span class="pill">🎯 Fun</span>
@@ -131,25 +134,25 @@
 
       <ol class="timeline">
         <li>
-          <span class="time">9:30 – 9:45</span>
+          <span class="time">9:30 – 10:00</span>
           <div class="event">
             <h4>Welcome Circle &amp; Icebreaker</h4>
-            <p>Kick off the day with energizing games like "Find Someone Who".</p>
+            <p>Kick off the day with energizing games and a warm group welcome.</p>
           </div>
           <span class="dot">👋</span>
         </li>
         <li>
-          <span class="time">9:45 – 10:45</span>
+          <span class="time">10:00 – 10:45</span>
           <div class="event">
-            <h4>Personal Development</h4>
-            <p>Confidence, mindset, and leadership-building activities.</p>
+            <h4>Featured Workshop</h4>
+            <p>Guest-led learning: arts &amp; crafts, STEM, AI, cooking, or rocketry — a new adventure each day.</p>
           </div>
           <span class="dot">🌱</span>
         </li>
         <li>
           <span class="time">10:45 – 11:00</span>
           <div class="event">
-            <h4>Snack &amp; Break</h4>
+            <h4>Snack &amp; Social Break</h4>
             <p>Refuel and recharge with friends.</p>
           </div>
           <span class="dot">🍎</span>
@@ -157,8 +160,8 @@
         <li>
           <span class="time">11:00 – 12:00</span>
           <div class="event">
-            <h4>Activity Workshop</h4>
-            <p>Arts &amp; crafts, science, engineering, or cooking — a new adventure each day.</p>
+            <h4>Hands-On Activity</h4>
+            <p>Creative competitions, physics labs, food activities, and team challenges.</p>
           </div>
           <span class="dot">🎨</span>
         </li>
@@ -166,7 +169,7 @@
           <span class="time">12:00 – 12:30</span>
           <div class="event">
             <h4>Reflection &amp; Wrap-Up</h4>
-            <p>Share highlights, celebrate wins, and earn passport stamps.</p>
+            <p>Share highlights, celebrate wins, and close the day together.</p>
           </div>
           <span class="dot">⭐</span>
         </li>
@@ -185,59 +188,71 @@
 
       <div class="grid grid-3 day-grid">
         <article class="day-card" style="--card-c1:#FFB454;--card-c2:#FF6F61;">
-          <div class="day-badge">Day 1</div>
-          <h3>🌟 Team Building &amp; Personal Growth</h3>
-          <ul>
-            <li>Welcome Circle &amp; Icebreaker — <em>Find Someone Who</em></li>
-            <li>Arts &amp; Craft project: <strong>Ocean World</strong> or <strong>My Bunny Village</strong></li>
-            <li>Foundations for the week ahead</li>
+          <div class="day-badge">Day 1 · Mon 7/13</div>
+          <h3>🎨 Orientation &amp; Arts and Crafts</h3>
+          <ul class="day-schedule">
+            <li><strong>9:30 – 9:45</strong> Opening Camp Remark &amp; Icebreaker</li>
+            <li><strong>9:45 – 10:45</strong> Play-Dough Chef</li>
+            <li><strong>10:45 – 11:00</strong> Snack &amp; Social Break</li>
+            <li><strong>11:00 – 12:00</strong> Creative Art Competition</li>
+            <li><strong>12:00 – 12:30</strong> Reflection &amp; Wrap-up</li>
           </ul>
         </article>
 
         <article class="day-card" style="--card-c1:#6EE7B7;--card-c2:#10B981;">
-          <div class="day-badge">Day 2</div>
-          <h3>🌿 Outdoor Adventure &amp; Discovery</h3>
-          <ul>
-            <li>⚡ Fitness Circuit · Relay Race · Mini Soccer · Green Light · Tug of War</li>
-            <li>🌿 Nature Scavenger Hunt — find plants, hidden objects, make nature art</li>
-            <li>🎟️ Adventure Passport — earn stamps for completing activities</li>
+          <div class="day-badge">Day 2 · Tue 7/14</div>
+          <h3>🚀 Field Trip · Columbia Memorial Space Center</h3>
+          <p class="day-meta">📍 12400 Columbia Way, Downey, CA 90242</p>
+          <ul class="day-schedule">
+            <li><strong>9:30 – 10:00</strong> Meet in front of the Space Center</li>
+            <li><strong>10:00 – 10:45</strong> Guided Tour in Space Center (Part 1)</li>
+            <li><strong>10:45 – 11:00</strong> Snack &amp; Social Break</li>
+            <li><strong>11:00 – 12:00</strong> Hands-on activities: Robotics Lab · Challenger Learning Center Mission · Mission Control · Interactive Space Exhibits</li>
+            <li><strong>12:00 – 12:30</strong> Reflection &amp; Wrap-up</li>
           </ul>
         </article>
 
         <article class="day-card" style="--card-c1:#7DD3FC;--card-c2:#3B82F6;">
-          <div class="day-badge">Day 3</div>
-          <h3>🔬 Science + Engineering + Problem Solving</h3>
-          <ul>
-            <li>🎯 Focus: Critical Thinking &amp; Teamwork</li>
-            <li>Engineering: Tallest Tower · Recycled Robot · Moving Creature · Makey-Makey</li>
-            <li>Quiet corner · Social board games · Special Guest: <strong>Jindong Sha</strong></li>
+          <div class="day-badge">Day 3 · Wed 7/15</div>
+          <h3>🔬 STEM Theme · Rocket &amp; STEM Activities</h3>
+          <ul class="day-schedule">
+            <li><strong>9:30 – 10:00</strong> Welcome Circle &amp; Icebreaker</li>
+            <li><strong>10:00 – 10:45</strong> Build &amp; fly your own rocket with Young Aerospace Engineers — <em>Olivia Kao &amp; Charley Zhang</em></li>
+            <li><strong>10:45 – 11:00</strong> Snack &amp; Social Break</li>
+            <li><strong>11:00 – 12:00</strong> STEM &amp; Physics Activities — <em>Amy Jiang &amp; Abby Yan</em></li>
+            <li><strong>12:00 – 12:30</strong> Reflection &amp; Wrap-up</li>
           </ul>
         </article>
 
         <article class="day-card" style="--card-c1:#FCA5A5;--card-c2:#EC4899;">
-          <div class="day-badge">Day 4</div>
-          <h3>🍳 Cooking Arts &amp; No-Fire Cooking Lab</h3>
-          <ul>
-            <li>🎯 Focus: Life Skills · Leadership · Sensory · Creativity</li>
-            <li>Hands-on: <strong>Fruit Kabobs</strong> &amp; <strong>Spam Musubi</strong></li>
-            <li>Guest Speaker: <strong>Olivia</strong></li>
+          <div class="day-badge">Day 4 · Thu 7/16</div>
+          <h3>🍳 Learn and Cook</h3>
+          <ul class="day-schedule">
+            <li><strong>9:30 – 10:00</strong> Welcome Circle &amp; Icebreaker</li>
+            <li><strong>10:00 – 10:45</strong> Learn Across Multiple Subjects with <strong>EqualiLearn AI</strong> — <em>Jindong Sha</em></li>
+            <li><strong>10:45 – 11:00</strong> Snack &amp; Social Break</li>
+            <li><strong>11:00 – 12:00</strong> Easy &amp; Fun Food Activities — <em>Raina Ji &amp; Abby Yan</em></li>
+            <li><strong>12:00 – 12:30</strong> Reflection &amp; Wrap-up</li>
           </ul>
         </article>
 
         <article class="day-card" style="--card-c1:#C4B5FD;--card-c2:#8B5CF6;">
-          <div class="day-badge">Day 5</div>
-          <h3>✨ Magic, Showcase &amp; Celebration</h3>
-          <ul>
-            <li>Magic workshop &amp; performance prep</li>
-            <li>Camper showcase — share the week's creations</li>
-            <li>Awards, passport stamps &amp; closing ceremony</li>
+          <div class="day-badge">Day 5 · Fri 7/17</div>
+          <h3>✨ Talent Show &amp; Award Ceremony</h3>
+          <ul class="day-schedule">
+            <li><strong>9:30 – 9:45</strong> Check-in &amp; Photo Wall Demo</li>
+            <li><strong>9:45 – 10:00</strong> Closing Camp Remarks</li>
+            <li><strong>10:00 – 10:45</strong> Student Talent Show</li>
+            <li><strong>10:45 – 11:00</strong> Snack &amp; Social Break</li>
+            <li><strong>11:00 – 12:00</strong> Community Resource Panel</li>
+            <li><strong>12:00 – 12:30</strong> Awards Ceremony &amp; Group Photo</li>
           </ul>
         </article>
 
         <article class="day-card day-card-cta" style="--card-c1:#FDE68A;--card-c2:#F59E0B;">
-          <div class="day-badge">Bonus</div>
-          <h3>🎟️ Adventure Passport System</h3>
-          <p>Complete activities → earn stamps → unlock rewards. A playful way to track progress and celebrate growth all week long.</p>
+          <div class="day-badge">Join Us</div>
+          <h3>🎟️ Ready to RiseUp?</h3>
+          <p>Five themed days, expert-led workshops, a real space-center field trip, and a talent-show finale — reserve your camper's spot today.</p>
           <a href="#register" class="btn btn-primary btn-sm">Save Your Spot</a>
         </article>
       </div>
@@ -300,12 +315,23 @@
       <div class="gallery">
         <figure><img src="images/image1.png" alt="Ocean World project" loading="lazy" /></figure>
         <figure><img src="images/image2.jpeg" alt="Bunny village craft" loading="lazy" /></figure>
-        <figure><img src="images/image9.png" alt="Camp activity" loading="lazy" /></figure>
-        <figure><img src="images/image11.png" alt="Camp activity" loading="lazy" /></figure>
-        <figure><img src="images/image13.png" alt="Camp activity" loading="lazy" /></figure>
-        <figure><img src="images/image12.jpg" alt="Camp activity" loading="lazy" /></figure>
         <figure><img src="images/image3.png" alt="Camp activity" loading="lazy" /></figure>
         <figure><img src="images/image4.png" alt="Camp activity" loading="lazy" /></figure>
+        <figure><img src="images/image5.png" alt="Camp activity" loading="lazy" /></figure>
+        <figure><img src="images/image6.png" alt="Camp activity" loading="lazy" /></figure>
+        <figure><img src="images/image7.png" alt="Camp activity" loading="lazy" /></figure>
+        <figure><img src="images/image8.png" alt="Camp activity" loading="lazy" /></figure>
+        <figure><img src="images/image9.png" alt="Camp activity" loading="lazy" /></figure>
+        <figure><img src="images/image10.png" alt="Camp activity" loading="lazy" /></figure>
+        <figure><img src="images/image11.png" alt="Camp activity" loading="lazy" /></figure>
+        <figure><img src="images/image12.jpg" alt="Camp activity" loading="lazy" /></figure>
+        <figure><img src="images/image13.png" alt="Camp activity" loading="lazy" /></figure>
+        <figure><img src="images/image.png" alt="Camp activity" loading="lazy" /></figure>
+        <figure><img src="images/image%20(1).png" alt="Camp activity" loading="lazy" /></figure>
+        <figure><img src="images/image%20(2).png" alt="Camp activity" loading="lazy" /></figure>
+        <figure><img src="images/image%20(3).png" alt="Camp activity" loading="lazy" /></figure>
+        <figure><img src="images/image%20(4).png" alt="Camp activity" loading="lazy" /></figure>
+        <figure><img src="images/image%20(5).png" alt="Camp activity" loading="lazy" /></figure>
       </div>
     </div>
   </section>
@@ -322,7 +348,7 @@
           <li>🕘 <strong>Time:</strong> 9:30 AM – 12:30 PM</li>
           <li>📍 <strong>Location:</strong> Quail Hill Community Center, 39 Shady Canyon Dr, Irvine, CA 92603</li>
           <li>🧒 <strong>Ages:</strong> 6 and up</li>
-          <li>💸 <strong>Cost:</strong> Free</li>
+          <li>💝 <strong>Cost:</strong> Accept Donations</li>
         </ul>
       </div>
 
