@@ -81,6 +81,15 @@ p { margin: 0 0 1em; color: var(--c-ink-soft); }
   box-shadow: 0 8px 20px rgba(255, 111, 97, 0.35);
 }
 .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(255, 111, 97, 0.45); }
+.btn-secondary {
+  background: linear-gradient(135deg, var(--c-sky), var(--c-aqua));
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.35);
+}
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(59, 130, 246, 0.45);
+}
 .btn-ghost {
   background: #fff;
   color: var(--c-ink);
@@ -520,33 +529,62 @@ p { margin: 0 0 1em; color: var(--c-ink-soft); }
 }
 .cta-list strong { color: #FFE4B5; }
 
-.register-form {
-  background: #fff; color: var(--c-ink);
-  padding: 32px; border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-lg);
-  display: flex; flex-direction: column; gap: 14px;
+/* ---------- Sign-up cards (Camper & Volunteer) ---------- */
+.signup-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
 }
-.register-form h3 { margin: 0 0 6px; color: var(--c-ink); font-size: 1.3rem; }
-.register-form label {
-  display: flex; flex-direction: column;
-  font-weight: 700; font-size: .85rem;
-  color: var(--c-ink-soft);
-  gap: 6px;
-}
-.register-form input {
-  font: inherit;
-  padding: 12px 14px;
-  border: 2px solid var(--c-border);
-  border-radius: 12px;
-  background: #FFF8EE;
+.signup-card {
+  background: #fff;
   color: var(--c-ink);
-  transition: border-color .15s, background .15s;
+  padding: 28px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: transform .2s ease, box-shadow .2s ease;
+  border-top: 6px solid var(--c-coral);
 }
-.register-form input:focus {
-  outline: none; border-color: var(--c-coral); background: #fff;
+.signup-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 28px 64px rgba(31, 41, 55, 0.22);
 }
-.form-note { font-size: .8rem; color: var(--c-ink-soft); margin: 0; text-align: center; }
-.form-note.success { color: var(--c-leaf); font-weight: 700; }
+.signup-card-camper { border-top-color: var(--c-coral); }
+.signup-card-volunteer { border-top-color: var(--c-sky); }
+.signup-card h3 {
+  margin: 0;
+  font-size: 1.35rem;
+  color: var(--c-ink);
+}
+.signup-card p {
+  margin: 0;
+  color: var(--c-ink-soft);
+  font-size: .98rem;
+}
+.signup-card .btn {
+  margin-top: 8px;
+}
+.signup-icon {
+  width: 56px; height: 56px;
+  display: grid; place-items: center;
+  border-radius: 16px;
+  font-size: 1.9rem;
+  background: linear-gradient(135deg, #fff5e0, #ffe4d6);
+}
+.signup-card-volunteer .signup-icon {
+  background: linear-gradient(135deg, #e0f2fe, #cffafe);
+}
+.signup-note {
+  font-size: .78rem;
+  color: var(--c-ink-soft);
+  margin: 0;
+  text-align: center;
+  opacity: .85;
+}
 
 /* ---------- Footer ---------- */
 .footer {

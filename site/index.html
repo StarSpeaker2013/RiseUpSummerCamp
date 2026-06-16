@@ -24,7 +24,7 @@
         <a href="#activities">Activities</a>
         <a href="#days">Daily Themes</a>
         <a href="#gallery">Gallery</a>
-        <a href="#register" class="btn btn-primary btn-sm">Register</a>
+        <a href="#register" class="btn btn-primary btn-sm">Sign Up</a>
       </nav>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
@@ -53,7 +53,18 @@
           creative problem-solving, magic, and no-fire cooking.
         </p>
         <div class="hero-cta">
-          <a href="#register" class="btn btn-primary">Sign Up →</a>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc4l9zQ0KX8jPj96VpdR088mcxyvPn792XnbeOI37Owm8FvBQ/viewform?usp=header"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary"
+          >🧒 Camper Sign Up →</a>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc0vKXQ-om9e845QHtn8UEL_dvqoACG5MBjSj6ceDqUvxqg7w/viewform?usp=header"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-secondary"
+          >🙌 Volunteer Sign Up</a>
           <a href="#overview" class="btn btn-ghost">Learn More</a>
         </div>
         <ul class="hero-facts">
@@ -253,7 +264,12 @@
           <div class="day-badge">Join Us</div>
           <h3>🎟️ Ready to RiseUp?</h3>
           <p>Five themed days, expert-led workshops, a real space-center field trip, and a talent-show finale — reserve your camper's spot today.</p>
-          <a href="#register" class="btn btn-primary btn-sm">Save Your Spot</a>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc4l9zQ0KX8jPj96VpdR088mcxyvPn792XnbeOI37Owm8FvBQ/viewform?usp=header"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary btn-sm"
+          >Save Your Spot</a>
         </article>
       </div>
     </div>
@@ -340,9 +356,9 @@
   <section class="section section-cta" id="register">
     <div class="container cta-inner">
       <div class="cta-copy">
-        <span class="kicker light">Sign Up for Classes</span>
+        <span class="kicker light">Sign Up Today</span>
         <h2>Ready for an unforgettable summer?</h2>
-        <p>Spaces are limited — register early to secure your camper's spot in the RiseUp 2026 cohort.</p>
+        <p>Spaces are limited — sign up early to secure your camper's spot, or join us as a volunteer to make RiseUp 2026 unforgettable.</p>
         <ul class="cta-list">
           <li>📅 <strong>Dates:</strong> Mon – Fri · 7/13, 7/14, 7/15, 7/16, 7/17</li>
           <li>🕘 <strong>Time:</strong> 9:30 AM – 12:30 PM</li>
@@ -352,31 +368,33 @@
         </ul>
       </div>
 
-      <form class="register-form" onsubmit="return handleRegister(event)">
-        <h3>Register Your Camper</h3>
-        <label>
-          Parent / Guardian Name
-          <input type="text" name="parent" required placeholder="Jane Doe" />
-        </label>
-        <label>
-          Camper Name
-          <input type="text" name="camper" required placeholder="Alex Doe" />
-        </label>
-        <label>
-          Camper Age
-          <input type="number" name="age" min="6" max="12" required placeholder="8" />
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" required placeholder="you@example.com" />
-        </label>
-        <label>
-          Phone
-          <input type="tel" name="phone" placeholder="(949) 555-0123" />
-        </label>
-        <button type="submit" class="btn btn-primary btn-block">Reserve Spot →</button>
-        <p class="form-note" id="formNote">By registering you agree to be contacted about camp details.</p>
-      </form>
+      <div class="signup-cards">
+        <article class="signup-card signup-card-camper">
+          <div class="signup-icon">🧒</div>
+          <h3>Camper Sign Up</h3>
+          <p>Reserve your camper's spot for 5 days of adventure, leadership, and unforgettable fun.</p>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc4l9zQ0KX8jPj96VpdR088mcxyvPn792XnbeOI37Owm8FvBQ/viewform?usp=header"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary btn-block"
+          >Open Camper Form →</a>
+          <p class="signup-note">Opens a Google Form in a new tab.</p>
+        </article>
+
+        <article class="signup-card signup-card-volunteer">
+          <div class="signup-icon">🙌</div>
+          <h3>Volunteer Sign Up</h3>
+          <p>Help campers thrive — mentor, lead activities, and make a real impact in your community.</p>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc0vKXQ-om9e845QHtn8UEL_dvqoACG5MBjSj6ceDqUvxqg7w/viewform?usp=header"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-secondary btn-block"
+          >Open Volunteer Form →</a>
+          <p class="signup-note">Opens a Google Form in a new tab.</p>
+        </article>
+      </div>
     </div>
   </section>
 
