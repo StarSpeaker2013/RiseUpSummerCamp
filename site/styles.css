@@ -270,6 +270,30 @@ p { margin: 0 0 1em; color: var(--c-ink-soft); }
 .tilt-right { bottom: 0; right: 0; transform: rotate(5deg); }
 .photo-card:hover { transform: rotate(0) scale(1.02); z-index: 2; }
 
+/* Carousel variant: stacked images cross-fade */
+.photo-card.carousel { position: absolute; }
+.photo-card.carousel::before {
+  content: "";
+  display: block;
+  width: 100%;
+  aspect-ratio: 4/3;
+}
+.photo-card.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease;
+  pointer-events: none;
+}
+.photo-card.carousel img.is-active {
+  opacity: 1;
+}
+
 .sticker {
   position: absolute;
   width: 64px; height: 64px;
